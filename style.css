@@ -10,8 +10,8 @@ div#page1 {
 	margin-bottom: 100px;
 }
 
-div#page2 {
-	margin-bottom: 100px;
+.parallax-window {
+	min-height: 700px;
 }
 
 h1{
