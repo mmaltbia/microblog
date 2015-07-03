@@ -69,11 +69,11 @@
     </div>
   <form id="new_todo_item" class="col-sm-6 col-xs-6 col-sm-offset-3">
     <div class="form-group">
-      <input class="form-control" id="postContent" placeholder="What's on your mind?" autofocus>
-      <input class="form-control" id="postName" placeholder="@username" autofocus>
+      <input class="form-control" id="message" placeholder="What's on your mind?" autofocus>
+      <input class="form-control" id="username" placeholder="@username" autofocus>
     </div>
     <div class="form-group">
-      <input type="submit" class="btn btn-success" id="add-btn" value="Post!">
+      <input type="submit" class="btn btn-success" id="postBtn" value="Post!">
     </div>
   </form>
 </div>      
@@ -84,9 +84,8 @@
   <h1 id="page2H1" class="text-center col-xs-6 col-xs-offset-3">The Convo</h1>
    <div class="innerContent2">
       <ul id="othersPosts" class="text-center col-xs-6 col-xs-offset-3">
-        <span class="col-sm-12 othersPosts"><li>What someone else posted</li></span>
-        <span class="col-sm-12 othersPosts"><li>What someone else posted</li></span>
-        <span class="col-sm-12 othersPosts"><li>What someone else posted</li></span>
+       
+      </ul>
     </div>
 </div>      
 
@@ -102,5 +101,16 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
+    <!--Underscore Template-->
+    <script type="text/template" id="underscore-template">
+    <div id="postContentTemplate">
+      <li>
+      <span>
+        <%= message %> - <%= username %>
+      <span>
+      </li>
+    </div>
+  </script>
   </body>
 </html>
