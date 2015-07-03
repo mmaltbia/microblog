@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Macro - A Microblog</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300|Roboto+Slab:300,100' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <div id="landingPage" class="parallax-window" sdata-parallax="scroll" data-image-src="images/railroads.jpg">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+            <h1 class="text-center">Macro</h1>
+            <h2 class="text-center">A Microblog</h2>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>    
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Create Post <span class="sr-only"></span></a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Browse Posts</a></li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <img id="quoteBox" src="images/quote-box.svg">
+        </div>
+        <br>
+        <br>
+        <br>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+<div id="page1">
+  <h1 id="page1H1" class="text-center">Say Something!</h1>
+   <div class="text-center">
+      <img id="quoteBox1" src="images/quote-box1.svg">
+    </div>
+  <form id="new_todo_item" class="col-sm-6 col-xs-6 col-sm-offset-3">
+    <div class="form-group">
+      <input class="form-control" id="postContent" placeholder="What's on your mind?" autofocus>
+      <input class="form-control" id="postName" placeholder="@username" autofocus>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-success" id="add-btn" value="Add to list!">
+    </div>
+  </form>
+</div>         
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap Script Tag -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Underscore Script Tag -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- Custom Script Tag -->
+    <script type="text/javascript" src="parallax.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
