@@ -43,12 +43,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Create Post <span class="sr-only"></span></a></li>
+            <li class="active"><a href="#page1">Create Post <span class="sr-only"></span></a></li>
           </ul>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="#">Browse Posts</a></li>
+            <li><a href="#page2">Browse Posts</a></li>
           </ul>
         </div>
         <div class="text-center">
@@ -64,24 +64,26 @@
 
 <div id="page1">
   <h1 id="page1H1" class="text-center">Say Something!</h1>
-   <div class="text-center">
-      <img id="quoteBox1" src="images/quote-box1.svg">
-    </div>
-  <form id="new_todo_item" class="col-sm-6 col-xs-6 col-sm-offset-3">
+   <div class="text-center" id="formDiv">
+      <form id="newPost" class="col-sm-6 col-xs-6 col-sm-offset-3">
     <div class="form-group">
-      <input class="form-control" id="message" placeholder="What's on your mind?" autofocus>
+      <input class="form-control" id="message" placeholder="What's on your mind?" autofocus maxlength="140">
       <input class="form-control" id="username" placeholder="@username" autofocus>
     </div>
     <div class="form-group">
-      <input type="submit" class="btn btn-success" id="postBtn" value="Post!">
+      <input type="reset" class="btn btn-success" id="postBtn" value="Post!">
     </div>
   </form>
+  </div>
 </div>      
 
 <br><br>   
 
 <div id="page2" class="parallax-window" sdata-parallax="scroll" data-image-src="images/ant.png">
   <h1 id="page2H1" class="text-center col-xs-6 col-xs-offset-3">The Convo</h1>
+  <div id="counterDiv1" class="text-center col-xs-6 col-xs-offset-3"></div>
+  <div id="counterDiv2" class="text-center col-xs-6 col-xs-offset-3"></div>
+  <div id="counterDiv3" class="text-center col-xs-6 col-xs-offset-3"></div>
    <div class="innerContent2">
       <ul id="othersPosts" class="text-center col-xs-6 col-xs-offset-3">
        

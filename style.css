@@ -13,9 +13,13 @@ body{
 	margin: 10px;
 }
 
+#formDiv {
+	background: #fff url('images/quote-box1.svg');
+}
+
 div#page1 {
 	background-color: #000;
-	margin-bottom: 100px;
+	margin-bottom: 300px;
 }
 
 .parallax-window {
@@ -43,6 +47,18 @@ h1#page2H1 {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	color: #fff;
+}
+
+#counterDiv1 {
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	font-size: 175%;
+}
+
+#counterDiv2 {
+	color: #fff;
+	font-family: 'Oswald', serif;
+	font-size: 175%;
 }
 
 h2 {
